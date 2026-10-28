@@ -1,0 +1,29 @@
+PASS original logo intro ready
+PASS skip intro to title menu
+PASS open character creation
+PASS select another original portrait
+PASS select elf race
+PASS cycle legal classes for elf
+PASS change character sex
+PASS change alignment
+PASS modify strength within race bounds
+PASS edit and retain custom name ALDER
+PASS mage class and constitution determine hit points
+PASS confirm all four heroes and review party
+PASS edit a confirmed hero
+PASS reroll respects original race and class bounds
+PASS enter dungeon after party confirmation
+PASS selected class and constitution transfer into gameplay
+PASS individual hit points form the party total
+PASS selected portrait race and class survive entry
+PASS open individual party sheets in dungeon
+PASS close sheets without resetting game
+PASS F2 returns to frontend
+PASS frontend title menu restored
+PASS replay introduction from title menu
+PASS title scene advances automatically
+PASS Waterdeep intro scene
+PASS lords intro scene
+PASS sewer intro scene
+PASS blocked exit intro scene
+PASS full introduction returns to menu automatically

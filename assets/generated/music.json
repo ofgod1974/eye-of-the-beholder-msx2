@@ -1,0 +1,92 @@
+[
+  {
+    "title": "04 Character Generation.vgz",
+    "seconds": 102.84539682539682,
+    "loopTime": 56,
+    "sha256": "a81562d6e0530f7ac402e2bb43bb516057940bd976929af0316ce7eef99c3459",
+    "streams": [
+      {
+        "bank": 240,
+        "offset": 0,
+        "bytes": 4350
+      },
+      {
+        "bank": 240,
+        "offset": 4350,
+        "bytes": 5262
+      }
+    ]
+  },
+  {
+    "title": "05 Ending Theme.vgz",
+    "seconds": 102.12646258503402,
+    "loopTime": null,
+    "sha256": "35e3273d1f0a319754701515576364cdcf5709f95b792e4bd230f9f136101144",
+    "streams": [
+      {
+        "bank": 241,
+        "offset": 1420,
+        "bytes": 4314
+      },
+      {
+        "bank": 241,
+        "offset": 5734,
+        "bytes": 4734
+      }
+    ]
+  },
+  {
+    "title": "01 Westwood Associates Logo.vgz",
+    "seconds": 33.35192743764172,
+    "loopTime": null,
+    "sha256": "31154b65f79d43658a55534555de811f83402ade697e09ef259b3a38ab9767c6",
+    "streams": [
+      {
+        "bank": 242,
+        "offset": 2276,
+        "bytes": 5928
+      },
+      {
+        "bank": 243,
+        "offset": 12,
+        "bytes": 6907
+      }
+    ]
+  },
+  {
+    "title": "02 Introduction Part 1.vgz",
+    "seconds": 90.72256235827665,
+    "loopTime": null,
+    "sha256": "36caf5d00e836d7d93aa491093769f542ddc55d84dbc6d12a28926be3ad2ac18",
+    "streams": [
+      {
+        "bank": 243,
+        "offset": 6919,
+        "bytes": 10104
+      },
+      {
+        "bank": 245,
+        "offset": 639,
+        "bytes": 11080
+      }
+    ]
+  },
+  {
+    "title": "03 Introduction Part 2.vgz",
+    "seconds": 31.62485260770975,
+    "loopTime": null,
+    "sha256": "ba76a3a195dd961cd58b9b03cebe84045a7cfac658f6c3fc76d8839bf1ffc0fa",
+    "streams": [
+      {
+        "bank": 246,
+        "offset": 3527,
+        "bytes": 2040
+      },
+      {
+        "bank": 246,
+        "offset": 5567,
+        "bytes": 2115
+      }
+    ]
+  }
+]

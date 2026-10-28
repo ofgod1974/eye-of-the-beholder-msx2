@@ -1,0 +1,7 @@
+build/*
+!build/beholder-intro.rom
+!build/checks.txt
+!build/verification.txt
+!build/front-checks.txt
+!build/front-result.txt
+music-normal.wav

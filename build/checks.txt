@@ -1,0 +1,24 @@
+PASS initial party and ready frame
+PASS SCREEN 5 active
+PASS forward step
+PASS kobold blocks movement
+PASS attack and retaliation
+PASS second hit
+PASS healing consumes potion
+PASS defeat kobold
+PASS walk through defeated enemy
+PASS collect key
+PASS wall collision
+PASS turn right
+PASS map toggle
+PASS close map
+PASS locked without key
+PASS unlock door
+PASS cross open door
+PASS victory at exit
+PASS victory stops movement
+PASS restart resets all state
+PASS party death
+PASS dead party cannot move
+PASS restart after death
+PASS complete walkthrough without position fixtures

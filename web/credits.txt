@@ -1,0 +1,41 @@
+# Provenienza
+
+Le risorse VGA in assets/source sono estratte dai dischi PC DOS documentati da PCjs:
+https://www.pcjs.org/software/pcx86/game/other/1991/eob1/
+
+I cinque dischi e i file DOS sono stati verificati con i checksum PCjs. I sei archivi
+EOBDATA*.PAK coincidono per dimensione e MD5 con il catalogo game-data-packager 89:
+https://deb.debian.org/debian/pool/contrib/g/game-data-packager/game-data-packager_89.tar.xz
+
+Risorse usate: BRICK.VCN, BRICK.VMP, BRICK.PAL, PLAYFLD.CPS, CHARGENA.CPS,
+KOBOLD.CPS, DOOR.CPS, ITEMICN.CPS, EOBPAL.COL.
+Eye of the Beholder e le sue immagini appartengono ai rispettivi titolari.
+La licenza del codice non cambia quella degli asset originali.
+
+I decoder bitmap e il compositore VCN/VMP seguono ScummVM, con adattamenti per
+la conversione offline e la quantizzazione MSX2. Riferimenti:
+https://github.com/scummvm/scummvm/blob/master/engines/kyra/graphics/screen.cpp
+https://github.com/scummvm/scummvm/blob/master/engines/kyra/engine/scene_rpg.cpp
+https://github.com/scummvm/scummvm/blob/master/engines/kyra/engine/scene_eob.cpp
+https://github.com/scummvm/scummvm/blob/master/engines/kyra/graphics/screen_eob.cpp
+
+Codice di questa demo e conversione: GPL-3.0-or-later, testo in COPYING-GPL.txt.
+ScummVM è copyright dei suoi autori e distribuito con GPL versione 3 o successive.
+
+Fusion-C: Eric Boez e collaboratori.
+https://github.com/ericb59/Fusion-C-v1.2
+Lo startup src/crt0.s deriva dal codice Fusion-C di mvac7/303bcn (2018), con
+azzeramento RAM e inizializzazione dei banchi ASCII8 aggiunti per questa demo.
+Le altre routine Fusion-C sono fornite dalla toolchain locale, non duplicate qui.
+
+La mappa 12×12 e la logica semplificata di chiave, porta, combattimento e vittoria
+sono proprie del prototipo. Non sono una trascrizione delle mappe e regole originali.
+
+Audio originale: Paul Mudra, rip VGMPF di Doommaster1994. Dati e riferimenti in
+AUDIO.md e assets/audio. FONT6.FNT originale PC è usato per il testo in VRAM.
+Gli effetti PSG sono nuovi. Il driver riprende anche le routine di interfaccia
+SCC/PSG e hook del precedente progetto MSX della stessa sessione.
+
+Frontend: WESTWOOD.CMP, TITLE-V.CMP, WTRDP2.CMP, KING.CMP, TUNNEL.CMP e ZOOMTUNL.CMP con palette originali; CHARGEN.CPS e CHARGENA.CPS per creazione e 44 ritratti. Conversione in scripts/generate-front.cjs. Limiti di razza/classe derivati dalle tabelle ScummVM devtools/create_kyradat/resources/eob1_dos.h; sequenza e palette confrontate con engines/kyra/sequence/sequences_eob.cpp. Introduzione ricostruita in sei immagini, con testi italiani nuovi.
+
+WebMSX 6.0.8, Paulo A. Peccin, GPL-3.0. Build C-BIOS riutilizzata dal sito Into the Eagle's Nest. https://github.com/ppeccin/WebMSX

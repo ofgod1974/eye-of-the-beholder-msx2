@@ -1,0 +1,114 @@
+{
+  "tiles": 1575,
+  "uniqueViews": 111,
+  "compressedBytes": 946110,
+  "romBytes": 2097152,
+  "paletteRGB333": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      3,
+      5
+    ],
+    [
+      4,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      4
+    ],
+    [
+      4,
+      4,
+      6
+    ],
+    [
+      5,
+      2,
+      1
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      3,
+      3,
+      1
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      3
+    ],
+    [
+      1,
+      1,
+      2
+    ],
+    [
+      7,
+      6,
+      2
+    ],
+    [
+      7,
+      7,
+      7
+    ]
+  ],
+  "sourceHashes": {
+    "BRICK.PAL": "b6d91802a23f540607a0505667f713b01551ac7c4b5e2237694c8cbbbfc05a8e",
+    "BRICK.VCN": "330a12e2679143d5da5a0ed2fb23544a38e8eb2c39388ea378bfcbcd580464d2",
+    "BRICK.VMP": "acf8ab7f512d9b4d90868a90ff8fe09a9ffaf160927adcdb0cbaf50a82b8ab1e",
+    "CHARGEN.CPS": "0ea1287b21f0ea17895af09fe3d700764edcf0267e5da9d991b31b78b45f8323",
+    "CHARGENA.CPS": "7c769db63223c38c736770047f6303cfef1c676e2adfa49f8e776813dc28957b",
+    "DOOR.CPS": "0a008bb6866d25f9d992f45ac6642aca071b485e90564f1b4ec46332638f8ad1",
+    "EOBPAL.COL": "af238368dee61381716b10bc3ab87aa6b465ffd9f9a4958cbebf3cc19e449616",
+    "FONT6.FNT": "16b6f4fe614d178ff2b9fc59dba7c21d821fc6f5e00120e9830870b5d4491b06",
+    "INTRO.CPS": "b06798a5c0e842c130f47d18634cf23baa1f0894275dd34eda6db63b1c5faa04",
+    "ITEMICN.CPS": "4c1816140754c59ad3b01ca0cd13e52ce5e2865e837be1638fab901110251b8d",
+    "KING.CMP": "76835482d047d0b5f4c937119cdeae0155293e3ab6d2ab3b2836bc601122c629",
+    "KOBOLD.CPS": "1f437963edb320537ac16f666b308e6dddb3d5049c00d38659e4491f82242e6f",
+    "PLAYFLD.CPS": "df92032e0b7c57c9449b895e801ef33f7dc50cea5c13fb2f9508a48c82be2b23",
+    "TITLE-V.CMP": "8eb39996db21216eceb4aa1f4651351e036b1271e36a38c45a354714f6d73937",
+    "TITLE-V.COL": "e6f3fe083440fb05165cf945e238a5fa65a3897b5054b4eadf143e9bd6db320a",
+    "TUNNEL.CMP": "4c590952098cb1b485a1c48cd60cf98063c0dad3c7255c4258de4be24f97730e",
+    "WESTWOOD.CMP": "285b965c0e32bc0207e551d9f20baed18579a3ec478498036aee7afd640e4ec8",
+    "WESTWOOD.COL": "e6f3fe083440fb05165cf945e238a5fa65a3897b5054b4eadf143e9bd6db320a",
+    "WTRDP1.CMP": "0a3b78aef7a901f7fe570e598272c21409c602c4894677c57aa71049a6ef2ad6",
+    "WTRDP2.CMP": "de9a30b6be566ce5efa7cfb8d1e480c8bacf9347c4863ba2e4b6851599a65e1b",
+    "WTRDP2.COL": "d82e43807ffb76f3a3961033d780833dfd9a6cedc842fb7545a049bcc7e8e307",
+    "WTRDP3.CMP": "6b527b09257ee74ccc8216a55d58dbb95c625f6273a908ae0429e30b6ee6428a",
+    "ZOOMTUNL.CMP": "07e26831d7cb587aff6a4d79e30995b76459c37c76dc9dd1a6353698df510a6f",
+    "ZOOMTUNL.COL": "599c799934f0d8d54660a884066c39b37ba4940ec45d861112d00b6e190ac0af"
+  }
+}

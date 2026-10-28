@@ -1,0 +1,1 @@
+{"configurations":[{"name":"MSX2 SDCC","includePath":["${workspaceFolder}/src","${env:MSX_KIT}/vendor/fusion-c/Working Folder/fusion-c/header"],"defines":["__SDCC","__z80"],"cStandard":"c99","intelliSenseMode":"windows-msvc-x86"}],"version":4}
