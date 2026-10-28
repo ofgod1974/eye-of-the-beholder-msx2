@@ -13,13 +13,15 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           ref: main
-      - name: Download and verify the published project
+      - name: Download the public project archive
+        run: curl --fail --location --retry 3 --max-time 90 --output /tmp/beholder-project.zip https://beholder-msx2.grandbuddy11.chatgpt.site/beholder-msx2-project.zip
+      - name: Verify and import the published project
         shell: python
         run: |
-          import hashlib, io, pathlib, urllib.request, zipfile
+          import hashlib, io, pathlib, zipfile
           url = "https://beholder-msx2.grandbuddy11.chatgpt.site/beholder-msx2-project.zip"
           expected = "215d80186d58bfb9764d1f9549f396e5d3fae0fb333b45608e83bcbfdd39ff0e"
-          data = urllib.request.urlopen(url, timeout=90).read()
+          data = pathlib.Path("/tmp/beholder-project.zip").read_bytes()
           assert hashlib.sha256(data).hexdigest() == expected, "Project archive hash mismatch"
           files = [
               "assets/generated/assets.bin",
