@@ -1,0 +1,48 @@
+name: Import verified game binaries
+on:
+  push:
+    paths:
+      - .github/workflows/import-binaries.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+      - name: Download and verify the published project
+        shell: python
+        run: |
+          import hashlib, io, pathlib, urllib.request, zipfile
+          url = "https://beholder-msx2.grandbuddy11.chatgpt.site/beholder-msx2-project.zip"
+          expected = "215d80186d58bfb9764d1f9549f396e5d3fae0fb333b45608e83bcbfdd39ff0e"
+          data = urllib.request.urlopen(url, timeout=90).read()
+          assert hashlib.sha256(data).hexdigest() == expected, "Project archive hash mismatch"
+          files = [
+              "assets/generated/assets.bin",
+              "build/beholder-intro.rom",
+              "music-fmpac.wav",
+              "music-opl4.wav",
+              "music-psg.wav",
+              "music-scc.wav",
+              "web/beholder.rom",
+              "web/wmsx.js",
+          ]
+          with zipfile.ZipFile(io.BytesIO(data)) as archive:
+              for name in files:
+                  target = pathlib.Path(name)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  target.write_bytes(archive.read(name))
+                  print(name, hashlib.sha256(target.read_bytes()).hexdigest())
+      - name: Commit the verified binaries
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/generated/assets.bin build/beholder-intro.rom music-fmpac.wav music-opl4.wav music-psg.wav music-scc.wav web/beholder.rom web/wmsx.js
+          if ! git diff --cached --quiet; then
+            git commit -m "Add verified ROM, WebMSX runtime and audio previews"
+            git push origin HEAD:main
+          fi
